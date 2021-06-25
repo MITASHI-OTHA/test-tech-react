@@ -33,6 +33,26 @@ html, body {
   top: calc(50% - 34px/2 - 27px);
 }
 
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Roboto;
+}
+
+.description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.mouth {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+
 @media(max-width: 1276px) {
   .d-flex.contentText {
     margin-left: 15px;
@@ -78,7 +98,7 @@ a {
 }
 
 .contentText {
-  background: aqua;
+  background: #C4C4C4;
   padding: 2ex;
   margin-left: 15ex;
   margin-right: 15ex;
@@ -98,7 +118,7 @@ a {
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 15px solid cyan;
+  border-bottom: 15px solid #C4C4C4;
   position: absolute;
   bottom: -15px;
 }

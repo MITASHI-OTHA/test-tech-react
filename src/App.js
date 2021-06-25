@@ -17,14 +17,14 @@ function App() {
     setMounth(months.map(item=> item.month==cur_month?{...item, isCurrent:true}:{...item, isCurrent: false}))
   }
 
-  let Mois = ()=> months.map((items, id)=> <scroll-container key={id}> <scroll-page id={id} key={id} class="m-p relative" style={items?.isCurrent?current:null} onClick={()=>handleMonth(items.month)}> <a href={`#${id}`}> {items.month} </a>  <div style={{display:items?.isCurrent?'block':'none'}} className="triangle-up"></div> </scroll-page> </scroll-container>  )
+  let Mois = ()=> months.map((items, id)=> <scroll-container key={id}> <scroll-page id={id} key={id} class="m-p relative mouth" style={items?.isCurrent?current:null} onClick={()=>handleMonth(items.month)}> <a href={`#${id}`}> {items.month} </a>  <div style={{display:items?.isCurrent?'block':'none'}} className="triangle-up"></div> </scroll-page> </scroll-container>  )
   
   const ContentText = ()=> {
     let current = months.find(item=> item.isCurrent)
 
     return <div style={{flex: 1}}>
-        <h1 className="text-center"> {current.contentTitle} </h1>
-        <p className="text-center mt-5">{parse(current.content)}</p>
+        <h1 className="text-center title"> {current.contentTitle} </h1>
+        <p className="text-center mt-5 description">{parse(current.content)}</p>
     </div>
   }
   
